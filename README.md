@@ -55,6 +55,16 @@ After running the executable, access the application at:
 - **Dynamic Configuration**: Start/stop polls and update options via the admin panel
 - **Live Visualization**: Animated progress bars in the OBS overlay, winner badge on close
 - **Random Voting**: Viewers can type `!random` to cast a random vote
+- **Optional Icons**: Setting on admin panel to show images to the left of poll options
+
+
+### Poll Image Handling
+
+- Currently images are set up to download and display steam game banners automatically when provided either a matching game name or steam store page URL
+- When a poll entry is a game that's not on steam there are three options
+    1. Show no image for games that either don't exist on steam or can't be found
+    2. Use a default image as a placeholder.  This can be done by saving an image in the images folder that is created in the same directory as the poll application after you start it.  Just name the image you want to use 'default'
+    3. If you have an image you want to use for a game that's from Itch.io or any source other than Steam.  Name the image file the same name you use for the poll option when you save it to the images folder.  This will link the two together and display it for that option
 
 ## OBS Setup
 
