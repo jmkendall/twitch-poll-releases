@@ -56,6 +56,7 @@ After running the executable, access the application at:
 - **Live Visualization**: Animated progress bars in the OBS overlay, winner badge on close
 - **Random Voting**: Viewers can type `!random` to cast a random vote
 - **Optional Icons**: Setting on admin panel to show images to the left of poll options
+- **Saved Polls**: Save and reuse polls
 
 
 ### Poll Image Handling
