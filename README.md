@@ -65,6 +65,15 @@ After running the executable, access the application at:
     1. Show no image for games that either don't exist on steam or can't be found
     2. Use a default image as a placeholder.  This can be done by saving an image in the images folder that is created in the same directory as the poll application after you start it.  Just name the image you want to use 'default'
     3. If you have an image you want to use for a game that's from Itch.io or any source other than Steam.  Name the image file the same name you use for the poll option when you save it to the images folder.  This will link the two together and display it for that option
+ 
+#### Current Order of Precedence for Image Handling
+
+1. Try to match the poll entry with a file name in the local images folder. 
+2. Check if the provided poll entry is a steam store page url
+3. Check if the game name provided returns an entry from a steam search
+4. Use the default icon if provided
+
+The order is handled this way in case you are playing an Itch.io game or other non-steam game that may end up returning a value from steam.  The game search by name sometimes returns odd results for common names since Steam likes to do, what appears to be, a "fuzzy" search and returns a best guess by your game name criteria.  This is still an early iteration and I'm very open to feedback about disabling or permanently removing the lookup by name functionality if it becomes an issue. 
 
 ## OBS Setup
 
